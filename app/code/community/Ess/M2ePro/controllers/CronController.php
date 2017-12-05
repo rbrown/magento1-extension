@@ -20,7 +20,7 @@ class Ess_M2ePro_CronController extends Mage_Core_Controller_Varien_Action
 
     public function indexAction()
     {
-        $this->closeConnection();
+#        $this->closeConnection();
 
         $cronRunner = Mage::getModel('M2ePro/Cron_Runner_Service');
 
