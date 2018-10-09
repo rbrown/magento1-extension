@@ -273,6 +273,7 @@ class Ess_M2ePro_Helper_Client extends Mage_Core_Helper_Abstract
         }
 
         $lastMemoryLimitLetter = strtolower(substr($memoryLimit, -1));
+        $memoryLimit = (int)$memoryLimit;
         switch($lastMemoryLimitLetter) {
             case 'g':
                 $memoryLimit *= 1024;
